@@ -1,0 +1,17 @@
+[global]
+ioengine=psync
+direct=1
+iodepth=16
+randrepeat=0
+norandommap=1
+thread
+group_reporting
+per_job_logs=0
+
+[seqw]
+numjobs=1
+rw=write
+bs=256k
+offset=0
+size=100%
+filename=/dev/nvme0n1
